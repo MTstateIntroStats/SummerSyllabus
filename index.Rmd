@@ -2,15 +2,15 @@
 title: 'STAT 216: Introduction to Statistics'
 author: 'Spring 2022 Syllabus'
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     theme: cerulean
     toc: yes
     toc_depth: 3
     toc_float: yes
     css: styles.css
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 ---
 
 ```{r setup, include=FALSE}
@@ -98,7 +98,9 @@ You should have familiarity with computers and technology (e.g., Internet browsi
 Two "textbooks" are required for this course:
 
 1. [_Montana State Introductory Statistics with R_](https://mtstateintrostats.github.io/IntroStatTextbook/) --- our free, online textbook
-2. [_STAT 216 Coursepack_](calendars/IntroStatActivities-SU22.pdf) --- our PDF workbook with reading guides and activities. You can purchase the workbook for under $15 and have it shipped to you [here](https://www.lulu.com/en/us/shop/stacey-hancock-and-jade-schmidt-and-melinda-yager/stat-216-summer-coursepack/paperback/product-4z7m7g.html?page=1&pageSize=4).
+2. [_STAT 216 Coursepack_](calendars/IntroStatActivities-SU22.pdf) --- our PDF workbook with reading guides and activities. You can purchase the workbook for under $15 and have it shipped to you [here](https://www.lulu.com/en/us/shop/stacey-hancock-and-jade-schmidt-and-melinda-yager/stat-216-summer-coursepack/paperback/product-4z7m7g.html?page=1&pageSize=4). Students are expected to bring the coursepack to class each day and to complete the activities within the coursepack. Unit 1 of the coursepack is provided here in case it takes more than a week to receive your coursepack. 
+
+* [_STAT 216 Coursepack_: Unit 1](calendars/Unit1_IntroStatActivities-SU22.pdf)
 
 
 ### RStudio
