@@ -26,10 +26,7 @@ pal <- brewer.pal(6, 'Pastel1')
 # Instructor contact information  {.tabset .tabset-fade}
 Your primary contact in STAT 216 is your instructor. If you have
 concerns that cannot be answered by your instructor, you may reach
-out to the Student Success Coordinator or the Course Supervisor.
-
-Refer to your section's **Instructor Contact Information under D2L Content** for your
-instructor and co-instructor/TA contact information.
+out to the Student Success Coordinator.
 
 ## Student Success Coordinator
 [**Jade Schmidt**](http://www.math.montana.edu/directory/faculty/1524571/jade-schmidt){target="_blank"}  
@@ -39,28 +36,18 @@ Phone: (406) 994-6557
 
 ---
 
-## Assistant Coordinator
-[**Melinda Yager**](http://www.math.montana.edu/directory/faculty/1582830/melinda-yager){target="_blank"}  
-email: melinda.yager@montana.edu  
-Office: Wilson 2-263  
-Phone: (406) 994-6557
+## Section 001 Instructor
+**Gifty Osei**
+Email: giftyosei@montana.edu
+Office: Wilson  1-135
 
 ---
 
-## Course Supervisor
-[**Dr. Stacey Hancock**](http://www.math.montana.edu/shancock/){target="_blank"}  
-email: stacey.hancock@montana.edu  
-Office: Wilson 2-195  
-Phone: (406) 994-5350 
-
-
----
 
 # Course calendars
 
-* [STAT 216 calendar](calendars/S22-Stat216_Calendar.pdf)
-* [MSU academic calendar](http://catalog.montana.edu/academiccalendar/)
-* [MSU finals week schedule](https://www.montana.edu/registrar/Schedules.html)
+* [STAT 216 Summer I calendar](calendars/Sum1_22-Stat216_Calendar.pdf)
+* [Summer registration calendar](https://www.montana.edu/registrar/add_drop_schedule.html)
 
 ---
 
@@ -111,13 +98,8 @@ You should have familiarity with computers and technology (e.g., Internet browsi
 Two "textbooks" are required for this course:
 
 1. [_Montana State Introductory Statistics with R_](https://mtstateintrostats.github.io/IntroStatTextbook/) --- our free, online textbook
-2. _STAT 216 Coursepack_ --- workbook with reading guides and in-class activities and labs
+2. [_STAT 216 Coursepack_](calendars/IntroStatActivities-SU22.pdf) --- our PDF workbook with reading guides and activities. You can purchase the workbook for under $15 and have it shipped to you [here](https://www.lulu.com/en/us/shop/stacey-hancock-and-jade-schmidt-and-melinda-yager/stat-216-summer-coursepack/paperback/product-4z7m7g.html?page=1&pageSize=4).
 
-The *Stat 216 Coursepack* of in-class activities is available for purchase in the [MSU Bookstore](https://www.msubookstore.org/). You may purchase the coursepack in person, or you may purchase online and have the coursepack shipped to you. Students are expected to bring the coursepack to class each day and to complete the activities within the coursepack. Chapter 1 of the coursepack is provided here if you do not have the coursepack by your first day of class.  
-
-* [_STAT 216 Coursepack_: Preface](Coursepack-Preface.pdf)
-* [_STAT 216 Coursepack_: Chapter 1](Coursepack-Week1.pdf)
-* [_STAT 216 Coursepack_: Chapter 2](Coursepack-Week2.pdf)
 
 ### RStudio
 We will be using the statistical software [R](https://www.r-project.org/) through the IDE [RStudio](https://rstudio.com/products/rstudio/) for data visualization and statistical analyses. 
@@ -135,9 +117,10 @@ See the [Statistical Computing](https://mtstateintrostats.github.io/IntroStatTex
   + *Important*: Make sure you are receiving email notifications for any D2L activity. In D2L, click on your name, then Notifications. Check that D2L is using an email address that you regularly check; you have the option of registering a mobile number. Check the boxes to get notifications for announcements, content, discussions, and grades. 
   + If you have a question about the course materials, computing, or logistics, please post your question to your D2L discussion board instead of emailing your instructor. This ensures all students can benefit from the responses. Other students are encouraged to respond. 
 
-- [**Gradescope**](https://www.gradescope.com/): Submit and review quizzes and assignments, review exam grades. For more details, see our [Gradescope Help for Students](http://www.math.montana.edu/courses/s216/GradescopeHelpForStudents.pdf) document
+- [**Gradescope**](https://www.gradescope.com/): Submit and review quizzes and assignments, review exam grades.For more details, see our links in D2L under Content --> Primary Resources --> Gradescope Help
 
-- [**Math Learning Center**](http://www.math.montana.edu/undergrad/mlc/index.html): Free drop-in tutoring for 100- and 200-level math and stat courses.
+- [**Math and Stat Center**](https://math.montana.edu/undergrad/msc/): Free drop-in tutoring for 100- and 200-level math and stat courses.
+
 
  
  
@@ -145,11 +128,11 @@ See the [Statistical Computing](https://mtstateintrostats.github.io/IntroStatTex
  
 # Course format and organization
  
-Stat 216 will meet 3 times per week. Each week, students will:
+Stat 216 will meet 3 times per week (Monday, Tuesdays, and Thursdays 10:00am - 12:20pm. Each week, students will:
 
-* **read** assigned sections of the online textbook and **watch videos** on that week's content ***prior*** to attending your assigned in-person class day, including concept check video quizzes embedded in the videos,
-* meet with your fellow students in your assigned classroom three class periods per week for **in-class group activities and discussion** (Mondays and Wednesdays) and **in-class Rstudio labs** (Friday),
-* complete one **assignment** in [Gradescope](https://www.gradescope.com/).
+* **read** assigned sections of the online textbook and **watch videos** on that week's content * ***prior*** to attending your assigned in-person class day, including concept check video quizzes embedded in the videos,
+* meet with your fellow students in your assigned classroom three class periods per week for **in-class group activities and discussion** and **in-class Rstudio labs**,
+* complete 2 **assignments** in [Gradescope](https://www.gradescope.com/).
 
 
 ---
@@ -190,85 +173,78 @@ grades %>% ggplot(aes(x=location, y=percent)) +
 
 You will be expected to complete the assigned textbook reading and D2L videos using the reading guides provided in the coursepack prior to attending the in-class activity for each week. Concept check quiz questions will be embedded in the videos up through the due date. Up until the deadline, you can retake the video quizzes as many times as you like (the most recent grade will be recorded in D2L). *(Note that if you re-watch a video without taking the quiz, D2L will record a zero for that quiz, even if you took the quiz previously.)* After the due date, videos will still be available to review, but quiz questions will no longer be included in the video. 
 
-* Video quizzes are due **Monday at 8am Mountain Time each week**.
-* The two lowest video grades will be dropped.
+* Video quizzes will *typically* be due each **class day at 10am MST**.
 
 ### Activities (10%)
 
-Every Monday and Wednesday, you will meet with your classmates and instructor to work through that day's coursepack group activity. Attendance and completion of the activity counts towards this portion of your grade. 
+Every class day, you will meet with your classmates and instructor to work through that day's coursepack group activities. Attendance and completion of the activity counts towards this portion of your grade. 
 
-* Activities must be completed in the Stat 216 Coursepack. **If you prefer to complete the activity on a pdf copy using a stylus-enabled device, please speak to your instructor, and he or she will provide you with a PDF copy of the coursepack.**
+* Activities must be completed in the Stat 216 Coursepack. **If you prefer to complete the activity on a pdf copy using a stylus-enabled device, please speak to your instructor, and she will provide you with a PDF copy of the coursepack.**
 * Activities will be checked for completion at the **beginning of the following class period**.
 * If you have an excused absence the day the activity is due (e.g., quarantine or ill), you may email your section instructor a scanned copy of the completed activity for credit. This must be received by **8pm Mountain Time on the day the activity would be checked in class**.
-* The lowest activity grade will be dropped.
 
 ### Labs (15%)
 
-Every Friday, you will meet with your classmates and instructor to work through that day's coursepack Rstudio group lab.  The lab will reinforce the ideas learned in the activities completed Monday and Wednesday but with the use of Rstudio for exploring and analyzing data.  
+Most class days, you will meet with your classmates and instructor to work through that day's coursepack Rstudio group lab.  The lab will reinforce the ideas learned in the activities completed in that module but with the use of Rstudio for exploring and analyzing data.  
 
-* Each group will turn in selected questions from the lab to Gradescope. Labs are due **Friday at 8pm Mountain Time each week**.
-* The lowest lab grade will be dropped.
+* Each group will turn in selected questions from the lab to Gradescope. Labs are due **Tuesdays and Thursdays at 8pm Mountain Time each week**.
 * Each student will also turn in each lab for completion at the **beginning of the following class period**.
 
 
 ### Assignments (15%)
 
-You will complete weekly assignments in [Gradescope](https://www.gradescope.com/). These should be completed individually (meaning all answers should be written in your own words), but you may use your classmates, tutors, or your instructor/co-instructor/TA for assistance. 
+You will complete bi-weekly assignments in [Gradescope](https://www.gradescope.com/). These should be completed individually (meaning all answers should be written in your own words), but you may use your classmates, tutors, or your instructor/co-instructor/TA for assistance. 
 
-* Weekly assignments are due **Monday at 8pm Mountain Time each week, covering the previous week's content**.
-* The lowest assignment grade will be dropped.
+* Weekly assignments will *typically* be due each **Tuesday and Thursday at 8pm MST**
 
 ### Midterm exams (30%)
 
-There will be two midterm exams (worth 15% of the course grade each). Midterm exams will be taken in class during your normal in-class time. Each exam has an group (Wednesday) and individual (Friday) component.  A practice exam will be released in D2L two weeks prior to the exam, with solutions to the practice exam released in D2L one week prior to the exam. Further details, resources, and instructions for each exam will be posted the week prior to the exam in D2L.
+There will be two midterm exams (worth 15% of the course grade each). Midterm exams will be taken in class during your normal in-class time. Each exam has an group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in D2L.
 
 #### _Group portion_:
-
-Group midterm exam 1 will be **February 16th**; Group midterm exam 2 will be **March 30th**. 
 
 * Group portions of the midterms are worth 20% of your midterm exam grade.
 * Group midterm exams are open book, open notes. 
 * You will be allowed a calculator on the group midterm exams. 
 * You **will** be required to use Rstudio on the group midterm exams.
 * **If you miss more than 33% of class days within a unit without communicating with your section instructor and group-mates, you must complete the group exam individually.**
+* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_22-Stat216_Calendar.pdf) for exam dates.
 
 #### _Individual portion_:
 
-Individual midterm exam 1 will be **February 18th**; Individual midterm exam 2 will be **April 1st**. 
-
 * Individual portions of the midterms will be worth 80% of your midterm exam grade.
-* Potential individual midterm exam questions will be released one week prior to the exam. All exam questions will be selected from this set.
-* On the exam day, you will be given a randomly chosen subset of the previously released potential exam questions for your exam.
 * Individual midterm exams are closed book, closed notes. 
-* A formula sheet will be provided to use during the exam (also released with the potential midterm exam questions).
+* A formula sheet will be provided to use during the exam.
 * You will be allowed a calculator on the individual midterm exams. 
 * You will **not** be required to use Rstudio on the individual midterm exams.
+* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_22-Stat216_Calendar.pdf) for exam dates.
 
 
 ### Final exam (20%)
 
-The group final exam will be taken in class during your normal in-class time. A practice exam will be released in D2L one week prior to the exam, with solutions to the practice exam released in D2L the Sunday prior to the exam. Further details, resources, and instructions for each exam will be posted the week prior to the exam in D2L.
+The final exam is cumulative, but will be more heavily weighted towards Unit 3 material and is worth 20% of the course grade. The final exam will be taken in class during your normal in-class time. The final exam has a group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in D2L.
 
 #### _Group portion_:
-
-Group final exam will be **May 4th AND May 6th (during normal class time)**. 
 
 * The group portion of the final exam will be worth 20% of your exam grade.
 * The group final exams is open book, open notes. 
 * You will be allowed a calculator on the group final exam. 
 * You **will** be required to use Rstudio on the group final exam.
 * **If you miss more than 33% of class days in Unit 3 without communicating with your section instructor and group-mates, you must complete the group exam individually.**
+* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_22-Stat216_Calendar.pdf) for exam dates.
+
 
 #### _Individual portion_:
 
 Individual final exam will be **Thursday, May 12 from 12:00 - 1:50pm**. 
 
 * The individual portion of the final exam will be worth 80% of your exam grade.
-* No potential final exam questions will be released.
 * The individual final exam is closed book. 
 * You will be allowed to create a one page note sheet for the exam.  You will also be provided a one page formula sheet during the exam.
 * You will be allowed a calculator on the individual final exam. 
 * You will **not** be required to use Rstudio on the individual final exams.
+* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_22-Stat216_Calendar.pdf) for exam dates.
+
 
 
 ### Letter grades
@@ -298,7 +274,7 @@ The grade cutoffs may be shifted _downward_ at the end of the semester based on 
 
 * **Videos**: You may take the in-video quizzes as many times as you like up until the due date --- the most recent quiz score will be the recorded grade for that video in D2L. Videos are available in D2L at least one week prior to the due date, so extensions on these quizzes are not given unless extenuating circumstances that prevent the student from viewing the video for that entire period.
 
-* **Activities and Labs**: Attendance in this course is critical for success and is therefore required. The in-class activity and lab grades are a proxy for attendance and engagement. Students are expected to be in class during in-class activities and labs to provide support to each other and their teammates while working through the material. If you need to miss a class period due to illness, quarantine, or other extenuating circumstances, please email your section instructor a picture or scan of your completed activity due that day by 8pm Mountain Time, and we can give you credit for your completed activity. If the activity is not received by 8pm Mountain Time on the day it is due, you will not receive credit unless extenuating circumstances that prevented you from completing the activity for the entire week prior to the due date.  If you need to miss a lab due to illness, quarantine, or other extenuating circumstances, please email your section instructor and group-mates letting them know **prior to the lab meeting**.  You may participate in the lab via video conferencing if desired or you may complete the lab on your own.  If the latter, your section instructor will determine an appropriate extension on the lab based on your individual circumstances.
+* **Activities and Labs**: Attendance in this course is critical for success and is therefore required. The in-class activity and lab grades are a proxy for attendance and engagement. Students are expected to be in class during in-class activities and labs to provide support to each other and their teammates while working through the material. If you need to miss a class period due to illness, quarantine, or other extenuating circumstances, please email your section instructor a picture or scan of your completed activity due that day by 8pm Mountain Time, and we can give you credit for your completed activity. If the activity is not received by 8pm Mountain Time on the day it is due, you will not receive credit unless there are extenuating circumstances that prevented you from completing the activity for the entire week prior to the due date.  If you need to miss a lab due to illness, quarantine, or other extenuating circumstances, please email your section instructor and group-mates letting them know **prior to the lab meeting**.  You may participate in the lab via video conferencing if desired or you may complete the lab on your own.  If the latter, your section instructor will determine an appropriate extension on the lab based on your individual circumstances.
 
 * **Exams**: 
     - Students that are in quarantine but healthy enough to take the exam should email Student Success Coordinator [Jade Schmidt](mailto: jade.schmidt2@montana.edu) to arrange to take the exam at home while being proctored via Zoom.
