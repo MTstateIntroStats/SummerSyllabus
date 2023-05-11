@@ -1,6 +1,6 @@
 ---
 title: 'STAT 216: Introduction to Statistics'
-author: 'Summer 2022 Syllabus'
+author: 'Summer 2023 Syllabus'
 output:
   html_document:
     theme: cerulean
@@ -39,7 +39,7 @@ Phone: (406) 994-6557
 ## Section 001 Instructor
 **Aaron Akyea Mensah**
 Email: aaronakyeamensah@montana.edu
-Office: Wilson  XXX
+Office: Wilson 2-268
 
 ---
 
