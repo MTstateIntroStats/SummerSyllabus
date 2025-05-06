@@ -1,6 +1,6 @@
 ---
 title: 'STAT 216: Introduction to Statistics'
-author: 'Summer 2024 Syllabus'
+author: 'Summer 2025 Syllabus'
 output:
   html_document:
     theme: cerulean
@@ -24,32 +24,16 @@ pal <- brewer.pal(6, 'Pastel1')
 
 
 # Instructor contact information  {.tabset .tabset-fade}
-Your primary contact in STAT 216 is your instructor. If you have
-concerns that cannot be answered by your instructor, you may reach
-out to the Student Success Coordinator.
-
-## Student Success Coordinator
-[**Melinda Yager**](https://www.math.montana.edu/directory/faculty/1582830/melinda-yager){target="_blank"}  
-email: melinda.yager@montana.edu  
-Office: Wilson 2-260  
-
----
-
-## Section 001 Instructors
-**Eliot Liucci**  
-Email: eliot.liucci@student.montana.edu  
-Office: Wilson 1-135
-
-**Roland Owusu**  
-Email: rolandowusu@montana.edu   
-Office: Wilson 1-135
+[**Jeremiah Pharr**](https://math.montana.edu/directory/faculty/2323177/jeremiah-pharr){target="_blank"}  
+email: jeremiahpharr@montana.edu  
+Office: Wilson 1-112
 
 ---
 
 
 # Course calendars
 
-* [STAT 216 Summer I calendar](calendars/Sum1_24-Stat216_Calendar.pdf)
+* [STAT 216 Summer I calendar](calendars/Sum1_25-Stat216_Calendar.pdf)
 * [Summer registration calendar](https://www.montana.edu/registrar/add_drop_schedule.html)
 
 ---
