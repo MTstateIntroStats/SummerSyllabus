@@ -174,7 +174,7 @@ Every class day, you will meet with your classmates and instructor to work throu
 
 You will complete weekly assignments in [Gradescope](https://www.gradescope.com/). These should be completed individually (meaning all answers should be written in your own words), but you may use your classmates, tutors, or your instructor/co-instructor/TA for assistance. 
 
-* Weekly assignments will be due each **Wednesday at 11:59 pm MST**.
+* Weekly assignments will *typically* be due each **Wednesday at 11:59 pm MST**.
 
 ### Midterm exam (25%) on June 9th
 
