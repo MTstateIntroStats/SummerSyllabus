@@ -85,7 +85,7 @@ You should have familiarity with computers and technology (e.g., Internet browsi
 Two "textbooks" are required for this course:
 
 1. [_Montana State Introductory Statistics with R_](https://mtstateintrostats.github.io/IntroStatTextbook/) --- our free, online textbook
-2. [_STAT 216 Coursepack_]--- available for free on D2L.
+2. STAT 216 Coursepack --- available for purchase from the MSU Bookstore
 
 ### RStudio
 We will be using the statistical software [R](https://www.r-project.org/) through the IDE [RStudio](https://rstudio.com/products/rstudio/) for data visualization and statistical analyses. 
@@ -96,14 +96,16 @@ You will access this software through the MSU RStudio server: [rstudio.math.mont
 
 See the [Statistical Computing](https://mtstateintrostats.github.io/IntroStatTextbook/#stat-computing) section in the Welcome chapter of our textbook for alternative options for accessing RStudio.
 
+### Required course software
+All students are required to have a word processor and spreadsheet software installed on the personal device they plan to use for this course.  We *highly* recommend the use of Word and Excel.  If you do not currently have Word and/or Excel installed on your device, you can download the Microsoft Office 365 for Students for free by following the instructions [here](https://coe.montana.edu/it/students/student-software.html).
 
 ### Learning management tools
 
-- [**D2L**](https://ecat1.montana.edu/): Find your instructor and co-instructor/TA contact info, announcements, exploration information, instructor notes, exam review material, assignment and data files, discussion forums, gradebook.
-  + *Important*: Make sure you are receiving email notifications for any D2L activity. In D2L, click on your name, then Notifications. Check that D2L is using an email address that you regularly check; you have the option of registering a mobile number. Check the boxes to get notifications for announcements, content, discussions, and grades. 
-  + If you have a question about the course materials, computing, or logistics, please post your question to your D2L discussion board instead of emailing your instructor. This ensures all students can benefit from the responses. Other students are encouraged to respond. 
+- [**Canvas**](https://ato.montana.edu/canvas/): Find your instructor contact info, announcements, instructor notes, exam review material, assignment and activity data and R files, discussion forums, gradebook.
+  + *Important*: Make sure you are receiving email notifications for any Canvas activity. In Canvas, go to your Profile, then Notifications. There you can enable your notification settings, including what notifications you want sent to your personal email for each class you are enrolled in.
+  + If you have a question about the course materials, computing, or logistics, please post your question to your Canvas discussion board instead of emailing your instructor. This ensures all students can benefit from the responses. Other students are encouraged to respond. 
 
-- [**Gradescope**](https://www.gradescope.com/): Submit and review quizzes and assignments, review exam grades.For more details, see our links in D2L under Content --> Primary Resources --> Gradescope Help
+- [**Gradescope**](https://www.gradescope.com/): Submit and review assignments, review exam grades.For more details, see our links in Canvas under Modules --> Primary Resources --> Gradescope Help
 
 - [**Math and Stat Center**](https://math.montana.edu/undergrad/msc/): Free drop-in tutoring for 100- and 200-level math and stat courses.
 
@@ -116,9 +118,9 @@ See the [Statistical Computing](https://mtstateintrostats.github.io/IntroStatTex
  
 Stat 216 will meet 3 times per week (Monday, Tuesdays, and Thursdays 10:00am - 12:20pm. Each week, students will:
 
-* **read** assigned sections of the online textbook and **watch videos** on that week's content * ***prior*** to attending your assigned in-person class day, including concept check video quizzes embedded in the videos,
+* **read** assigned sections of the online textbook and **watch videos** on that week's content ***prior*** to attending your assigned in-person class day, including completion of the video notes which are located in the coursepack,
 * meet with your fellow students in your assigned classroom three class periods per week for **in-class group activities and discussion** and **in-class Rstudio labs**,
-* complete 2 **assignments** in [Gradescope](https://www.gradescope.com/).
+* complete 1 **assignment** in [Gradescope](https://www.gradescope.com/).
 
 
 ---
@@ -130,108 +132,97 @@ Your grade in STAT 216 will contain the following components.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="75%", fig.align="center"}
 grades <- tribble(
   ~category,  ~percent,
-  "Videos", 10,
-  "Activities", 10,
-  "Labs", 15,
-  "Assignments", 15,
-  "Midterm exams (2)", 30,
-  "Final exam", 20
+  "Video Notes", 10,
+  "Activities and Labs", 15,
+  "Assignments", 20,
+  "Midterm exam", 25,
+  "Final exam", 30
 )
-grades$category <- fct_relevel(grades$category, "Videos", "Activities", "Labs" , "Assignments", "Midterm exams (2)", "Group project")
-grades$location <- rep(1, 6)
+grades$category <- fct_relevel(grades$category, "Video Notes", "Activities and Labs" , "Assignments", "Midterm exam", "Final exam")
+grades$location <- rep(1, 5)
 grades %>% ggplot(aes(x=location, y=percent)) +
   geom_col(aes(fill=category), col='black') + 
   guides(fill=FALSE) + 
-  geom_text(aes(x=rep(1, 6), 
-                label=c("Videos (10%)",
-                        "Activities (10%)",
-                        "Labs (15%)",
-                        "Assignments (15%)",
-                        "Midterm exams (30%)",
-                        "Final exam (20%)"), 
-                y=c(95,85,72.5,57.5,35,10))) + 
+  geom_text(aes(x=rep(1, 5), 
+                label=c("Video Notes (10%)",
+                        "Activities and Labs (15%)",
+                        "Assignments (20%)",
+                        "Midterm exams (25%)",
+                        "Final exam (30%)"), 
+                y=c(95,82.5,65,42.5,15))) + 
   labs(x='', y='Cumulative percent') + 
   theme(axis.text.x = element_blank()) +
   scale_fill_manual(values=pal)
 ```
 
-### Videos (10%)
+### Video Notes (10%)
 
-You will be expected to complete the assigned textbook reading and D2L videos using the reading guides provided on D2L prior to attending class each week. Concept check quiz questions will be completed in Gradescope. *(Note that you can rewind/review the video as much as you like, and may submit your Video Quiz in Gradescope as many times as you like up through the due date.  You can also check your answers in Gradescope after submitting (prior to the due date) by clicking on each question's hyperlink.  If a explanation appears, that means you answered the question correctly.)* 
+You will be expected to complete the assigned textbook reading and watch assigned videos in Canvas.  These videos should be used to complete the video notes provided in the coursepack (pages numbers to be completed are noted on the calendar), or to complete your own notes over the material covered in the videos.
 
-* Video quizzes will *typically* be due each **class day at 10 am MST**.
+* Video notes will be due checked **at the beginning of each class day**.
 
-### Activities (10%)
+### Activities and Labs (15%)
 
 Every class day, you will meet with your classmates and instructor to work through that day's coursepack group activities or labs. Attendance and completion of the activity counts towards this portion of your grade. 
 
-* Activities must be completed in the Stat 216 Coursepack. 
+* Activities and Labs must be completed in the Stat 216 Coursepack. 
 
-* Activities will be checked for completion at the **beginning of the following class period**.
-
-
-### Labs (15%)
-
-Most class days, you will meet with your classmates and instructor to work through that day's coursepack Rstudio group lab.  The lab will reinforce the ideas learned in the activities completed in that module but with the use of Rstudio for exploring and analyzing data.  
-
-* Each group will turn in selected questions from the lab to Gradescope. Labs are due **Tuesdays and Thursdays at 8 pm Mountain Time each week**.
-
-* Each student will also turn in each lab for completion at the **beginning of the following class period**.
+* Select question(s) from each activity and lab will be turned into **Gradescope prior to you leaving class each day**.  These will be submitted in your teams.
 
 
-### Assignments (15%)
+### Assignments (20%)
 
-You will complete bi-weekly assignments in [Gradescope](https://www.gradescope.com/). These should be completed individually (meaning all answers should be written in your own words), but you may use your classmates, tutors, or your instructor/co-instructor/TA for assistance. 
+You will complete weekly assignments in [Gradescope](https://www.gradescope.com/). These should be completed individually (meaning all answers should be written in your own words), but you may use your classmates, tutors, or your instructor/co-instructor/TA for assistance. 
 
-* Weekly assignments will *typically* be due each **Tuesday and Thursday at 8 pm MST**
+* Weekly assignments will *typically* be due each **Tuesdays at 11:59 pm MST**
 
-### Midterm exams (30%)
+### Midterm exam (25%) on June 9th
 
-There will be two midterm exams (worth 15% of the course grade each). Midterm exams will be taken in class during your normal in-class time. Each exam has an group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in D2L.
+There will be one midterm exam which will be taken in class during your normal in-class time. The midterm will consist of both a group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in Canvas.
 
 #### _Group portion_:
 
-* Group portions of the midterms are worth 20% of your midterm exam grade.
-* Group midterm exams are open book, open notes. 
-* You will be allowed a calculator on the group midterm exams. 
-* You **will** be required to use Rstudio on the group midterm exams.
+* The group portion of the midterm is worth 20% of your midterm exam grade.
+* Group midterm exam is open book, open notes, but you may not use AI.
+* You will be allowed a calculator on the group midterm exam. 
+* You **will** be required to use RStudio on the group midterm exam.
 * **If you miss more than 33% of class days within a unit without communicating with your section instructor and group-mates, you must complete the group exam individually.**
-* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_24-Stat216_Calendar.pdf) for exam dates.
+
 
 #### _Individual portion_:
 
-* Individual portions of the midterms will be worth 80% of your midterm exam grade.
-* Individual midterm exams are closed book, closed notes. 
+* Individual portion of the midterm will be worth 80% of your midterm exam grade.
+* Individual midterm exam are closed book, closed notes. 
 * A formula sheet will be provided to use during the exam.
-* You will be allowed a calculator on the individual midterm exams. 
-* You will **not** be required to use Rstudio on the individual midterm exams.
-* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_24-Stat216_Calendar.pdf) for exam dates.
+* You will also be allowed to create your own sheet of notes to use during the exam (8.5 by 11 in, must be handwritten).
+* You will be allowed a calculator on the individual midterm exam. 
+* You will **not** be required to use RStudio on the individual midterm exam.
 
 
-### Final exam (20%)
 
-The final exam is cumulative, but will be more heavily weighted towards Unit 3 material and is worth 20% of the course grade. The final exam will be taken in class during your normal in-class time. The final exam has a group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in D2L.
+### Final exam (30%) on June 26
+
+The final exam is cumulative, but will be more heavily weighted towards Unit 2 material and is worth 30% of the course grade. The final exam will be taken in class during your normal in-class time. The final exam has a group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in Canvas.
 
 #### _Group portion_:
 
 * The group portion of the final exam will be worth 20% of your exam grade.
-* The group final exams is open book, open notes. 
+* The group final exam is open book, open notes. 
 * You will be allowed a calculator on the group final exam. 
-* You **will** be required to use Rstudio on the group final exam.
+* You **will** be required to use RStudio on the group final exam.
 * **If you miss more than 33% of class days in Unit 3 without communicating with your section instructor and group-mates, you must complete the group exam individually.**
-* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_24-Stat216_Calendar.pdf) for exam dates.
+
 
 
 #### _Individual portion_:
 
-Individual final exam will be **Thursday, June 20 from 12:00 - 1:50pm**. 
-
 * The individual portion of the final exam will be worth 80% of your exam grade.
 * The individual final exam is closed book. 
-* You will be allowed to create a one page note sheet for the exam.  You will also be provided a one page formula sheet during the exam.
+* A formula sheet will be provided to use during the exam.
+* You will also be allowed to create your own sheet of notes to use during the exam (8.5 by 11 in, must be handwritten)
 * You will be allowed a calculator on the individual final exam. 
-* You will **not** be required to use Rstudio on the individual final exams.
-* Please refer to the [STAT 216 Summer I calendar](calendars/Sum1_24-Stat216_Calendar.pdf) for exam dates.
+* You will **not** be required to use RStudio on the individual final exams.
+
 
 
 
@@ -258,21 +249,28 @@ The grade cutoffs may be shifted _downward_ at the end of the semester based on 
 ---
 
 # Late work policies
+Note: we **highly** recommend saving your answers for each question while you complete all work in Gradescope.  This will ensure you can return to labs, activites, or assignments at a later date without fear of losing any progress.  Additionally, Gradescope will automatically submit any saved work when the due date passes, ensuring you earn up to full credit for all problems completed on time.
 
-* **Videos**:  Videos are available in D2L at least one week prior to the due date, so extensions on these quizzes are not given unless extenuating circumstances that prevent the student from viewing the video for that entire period.
+* **Assignments**: 
+    - You may take the assignments in Gradescope as many times as you like up until the due date using the Resubmit button to re-open a quiz. 
+    - Extensions on assignments are not given unless extenuating circumstances are present which are communicated to your instructor
+    
+* **Activities and Labs**: Attendance in this course is critical for success and is therefore required. The in-class activity and lab grades are a proxy for attendance and engagement. Students are expected to be in class during in-class activities and labs to provide support to each other and their teammates while working through the material. We will not record or post lectures/asynchronous learning opportunities. Students get a “free pass” for up to one class day per Unit, no questions asked, but are requested to communicate with their section instructor anytime they miss class. Illnesses/emergencies/school-related absences are included in this one; if students have extraneous circumstances, they are encouraged to talk to their instructor. 
+    - For illnesses or when students cannot attend class, we recommend that the student video conference into class with their group (preferably using WebEx or Zoom). Students attending class remotely can show their activity or lab over video conference for credit. Video conferencing should be set up by students’ teammates. If the student is uncomfortable asking, the instructor can facilitate that conversation (e.g., email the students’ teammates, cc’ing the student, and ask if anyone can setup a WebEx meeting for class). 
+    - If you miss class and email your instructor about your absence **prior to class time**, you will be given a 24-hour extension to complete the Gradescope portion of the activity or lab.
+    - Further extensions on activities or labs, or when an absence is not communicated prior to class time, are not given unless extenuating circumstances are present. Please email your instructor if you feel your missed exit ticket or lab falls into this category.
 
-* **Activities and Labs**: Attendance in this course is critical for success and is therefore required. The out-of-class, in-class activity and lab grades are a proxy for attendance and engagement. Students are expected to be in class during in-class activities and labs to provide support to each other and their teammates while working through the material. If you need to miss a class period due to illness, quarantine, or other extenuating circumstances, please email your section instructor a picture or scan of your completed activity due that day by 8pm Mountain Time, and we can give you credit for your completed activity. If the activity is not received by 8pm Mountain Time on the day it is due, you will not receive credit unless there are extenuating circumstances that prevented you from completing the activity for the entire week prior to the due date.  If you need to miss a lab due to illness, quarantine, or other extenuating circumstances, please email your section instructor and group-mates letting them know **prior to the lab meeting**.  You may participate in the lab via video conferencing if desired or you may complete the lab on your own.  If the latter, your section instructor will determine an appropriate extension on the lab based on your individual circumstances.
 
 * **Exams**: 
-    - Students that are in quarantine but healthy enough to take the exam should email Student Success Coordinator [Melinda Yager](mailto: melinda.yager@montana.edu) to arrange to take the exam at home while being proctored via Zoom.
-    - If you are ill to the point of not being able to take the exam, please email Student Success Coordinator [Melinda Yager](mailto: melinda.yager@montana.edu) to arrange a time to take the exam remotely via Zoom when you are feeling better within the week of the exam.
+    - Students that are in quarantine but healthy enough to take the exam should email your instructor to make alternative arrangements.  The group exams may be taken remotely and proctored via WebEx but all individual exams must be taken in person.
+    - If you are ill to the point of not being able to take the exam, please email your instructor to make alternative arrangements.  
     - Students who miss the exam without contacting the instructor prior to the exam will receive a zero on the exam.
     - Work is not a legitimate reason for an exam absence.
-
+    
 ---
  
 # COVID-19 policies and health-related class absences
-Montana State University strongly recommends students, faculty and staff wear face masks in indoor public spaces, in accordance with the Centers for Disease Control recommendations. Montana State University encourages students, faculty and staff to take advantage of convenient, on-campus clinics for the COVID-19 vaccine. Schedule your appointment by going to [www.montana.edu/health/coronavirus](www.montana.edu/health/coronavirus).
+Face masks are recommended, but not required, for students, faculty and staff indoors on campus.
 
 Please evaluate your own health status regularly and refrain from attending class and other on-campus events if you are ill.  MSU students who miss class due to illness will be given opportunities to access course materials online. You are encouraged to seek appropriate medical attention for treatment of illness.  In the event of contagious illness, please do not come to class or to campus to turn in work. Instead notify us by email about your absence as soon as practical, so that accommodations can be made.  Please note that documentation (a Doctor’s note) for medical excuses is not required.  MSU University Health Partners--as part their commitment to maintain patient confidentiality, to encourage more appropriate use of healthcare resources, and to support meaningful dialogue between instructors and students--does not provide such documentation.
 
@@ -301,11 +299,11 @@ Students in an academic setting are responsible for approaching all assignments 
 3. learning and using appropriate citation conventions within the field in which they are studying; and
 4. asking their instructor for guidance when they are uncertain of how to acknowledge the contributions of others in their thinking and writing.
 
-When students fail to adhere to these responsibilities, they may intentionally or unintentionally "use someone else’s language, ideas, or other original (not common-knowledge) material without properly acknowledging its source" [http://www.wpacouncil.org](http://www.wpacouncil.org). When the act is intentional, the student has engaged in plagiarism.
+When students fail to adhere to these responsibilities, they may intentionally or unintentionally "use someone else's language, ideas, or other original (not common-knowledge) material without properly acknowledging its source" [http://www.wpacouncil.org](http://www.wpacouncil.org). When the act is intentional, the student has engaged in plagiarism.
 
 Plagiarism is an act of academic misconduct, which carries with it consequences including, but not limited to, receiving a course grade of “F” and a report to the Office of the Dean of Students. Unfortunately, it is not always clear if the misuse of sources is intentional or unintentional, which means that you may be accused of plagiarism even if you do not intentionally plagiarize. If you have any questions regarding use and citation of sources in your academic writing, you are responsible for consulting with your instructor before the assignment due date. In addition, you can work with an MSU Writing Center tutor at any point in your writing process, including when you are integrating or citing sources. You can make an appointment and find citation resources at www.montana.edu/writingcenter.
 
-**In STAT 216, students involved in plagiarism on assignments (all parties involved) will receive a zero grade on that assignment. The second offense will result in a zero on that assignment, and the incident will be reported to the Dean of Students. Academic misconduct on an exam will result in a zero on that exam and will be reported to the Dean of Students, without exception.**
+**<mark style="background-color: lightblue"> In STAT 216, assignments that include the same wording as another student, regardless of whether that student was cited in your sources, will be considered plagiarism and will be treated as such.</mark> Students involved in plagiarism on assignments (all parties involved) will receive a zero grade on that assignment. The second offense will result in a zero on that assignment, and the incident will be reported to the Dean of Students. Academic misconduct on an exam will result in a zero on that exam and will be reported to the Dean of Students, without exception.**
 
 [More information about Academic Misconduct from the Dean of Students](https://www.montana.edu/deanofstudents/academicmisconduct/academicmisconduct.html)
 
@@ -315,4 +313,12 @@ Plagiarism is an act of academic misconduct, which carries with it consequences 
 
 This syllabus, course lectures and presentations, and any course materials provided throughout this term are protected by U.S. copyright laws.  Students enrolled in the course may use them for their own research and educational purposes.  However, reproducing, selling or otherwise distributing these materials without written permission of the copyright owner is expressly prohibited, including providing materials to commercial platforms such as Chegg or CourseHero.  Doing so may constitute a violation of U.S. copyright law as well as MSU’s Code of Student Conduct.
 
-[More information about Academic Misconduct from the Dean of Students](https://www.montana.edu/deanofstudents/academicmisconduct/academicmisconduct.html)
+
+---
+# Policy on the use of AI language models{#AI}
+
+In this course, you may utilize generative AI language models, including ChatGPT, as a resource to support your work outside of class (during class, you should seek assistance from group members or instructors). AI language models are powerful tools developed to generate text based on the input provided. **While the AI language models can help refine your writing and coding, it is important to remember that it is an AI system and not a substitute for your critical thinking and creativity. Due to the nature of statistics and this course, an AI-generated answer may be incomplete, overly complex, or even incorrect.** If you do not understand a concept or a question asked, we *highly* recommend visiting the [Math and Stats Center](https://math.montana.edu/undergrad/msc/), emailing or visiting with a member of your instructional team, or using the search feature within the online textbook before turning to Google or AI.
+
+If you choose to use this tool, apply it as a supplement and do not rely solely on its suggestions. Ultimately, you are responsible for the content and quality of your work. Therefore, you should critically evaluate ChatGPT outputs for accuracy, potential bias, and relevancy. When utilizing AI language models, it is essential to ensure that your writing and coding remains original and properly attributed, including citing outputs or text generated by ChatGPT. **If you choose to use AI language models to assist you on labs or assignments, you must cite the source used. Failure to do so will result in earning a 0 on all problems in which AI language models usage has been detected.**
+
+Please see the How to cite ChatGPT in MLA Style [resource](https://style.mla.org/citing-generative-ai/). We encourage you to use AI language models to enhance your writing and coding skills, experiment with its capabilities, and learn from its suggestions. If you have any questions or concerns regarding using AI language models for assignments, please discuss them with us.
