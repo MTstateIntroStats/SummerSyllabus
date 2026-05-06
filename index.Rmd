@@ -86,7 +86,7 @@ office: Wilson 1-136
 
 ## Addo
 
-**Giddeon Addo**
+**Gideon Addo**
 
 email: gideonaddo@montana.edu
 
@@ -226,7 +226,7 @@ grades %>% ggplot(aes(x=location, y=percent)) +
 
 To begin each module, you will be expected to complete the assigned textbook reading, watch the assigned videos in Canvas and take complete notes on the videos prior to class. 
 
-* You may take notes on your own or use the guided video notes (found in the coursepack).  Video notes will be checked off at the start of class the first day of the new module. 
+* You may take notes on your own or use the guided video notes (found in the coursepack).  Video notes will be checked off at the start of class each day. 
 * The lowest (1) preparation (video note) score will be dropped at the end of the semester.
 * OPTIONAL: You can complete video/reading quizzes, which are found on Gradescope, to check your understanding at any point during a module. You can check your answers after each question by using the Save button. If an explanation appears after you have saved your answer, that indicates your answer was correct.
 
@@ -237,15 +237,15 @@ To begin each module, you will be expected to complete the assigned textbook rea
 Every class day, you will meet with your classmates and instructor team to work through that day's coursepack group activity. Scores on these exit tickets make up this portion of your grade. 
 
 * Activities must be completed in the Stat 216 Coursepack. **If you prefer to complete the activity on a pdf copy using a stylus-enabled device, please speak to your instructor, and he or she will provide you with a PDF copy of the coursepack.**
-* As a group, you will submit an 'exit ticket' (answers to select question(s) from the activity) to **Gradescope at the end of activity**.
+* As a group, you will submit an 'exit ticket' (answers to select question(s) from the activity) to **Gradescope at the end of each class**.
     + Please review the discussion of the use of [AI](#AI) on exit tickets.
     + Be sure to only include those group members in class who assisted with the exit ticket on your submission.  Adding students to the submission who were not in class or did not participate is a form of academic misconduct.
 * Policy for missed activities/exit tickets: 
     + We will not record or post lectures/asynchronous learning opportunities.
-    + Students get a “free pass” for up to three activities/exit tickets per Unit, no questions asked, *but students are expected to communicate any absences with their section instructor*. **Note:** mutiple activities will be covered each class day, so missing 1 class day will likely amount to your three "free" absences! Illnesses/emergencies/school-related absences are included in these three; if students have extraneous circumstances, they are encouraged to talk to their instructor. 
+    + Students get a “free pass” for up to 1 missed class day (exit ticket) per Unit, no questions asked, *but students are expected to communicate any absences with their section instructor*. Illnesses/emergencies/school-related absences are included in these three; if students have extraneous circumstances, they are encouraged to talk to their instructor. 
     + For illnesses or when students cannot attend class, we recommend that the student video conference into class with their group. Attending class remotely will count as attendance. Video conferencing should be set up by students’ teammates. If the student is uncomfortable asking, the instructor can facilitate that conversation (e.g., email the students’ teammates, cc’ing the student, and ask if anyone can setup a WebEx meeting for class). 
     + Students who are unable to attend class remotely AND e-mail their instructor **the day of the missed class** regarding an absence will be allowed a 24-hour extension to complete the exit ticket(s) from that day.
-* The three (3) lowest exit ticket grades EACH unit will be dropped.
+* The lowest (1) exit ticket grade EACH unit will be dropped.
 
 ### Module Labs (10%)
 
@@ -277,7 +277,7 @@ There will be one midterm exam which will be taken in class during your normal i
 * Group midterm exam is open book, open notes, but you may not use AI.
 * You will be allowed a calculator on the group midterm exam. 
 * You **will** be required to use RStudio on the group midterm exam.
-* **If you miss more than 33% of class days within unit 1 (start of semester until exam date) without communicating with your section instructor and group-mates, you must complete the group exam individually.**
+* **If you miss more than 1 day of class within unit 1 (start of semester until exam date) without communicating with your section instructor and group-mates, you must complete the group exam individually.**
 
 
 #### _Individual portion_:
@@ -295,8 +295,8 @@ There will be one midterm exam which will be taken in class during your normal i
 
 The final exam is cumulative, but will be more heavily weighted towards Unit 2 material and is worth 30% of the course grade. The final exam will be taken in class during your normal in-class time. The final exam has a group (first hour of class) and individual (second hour of class) component. Further details, resources, and instructions for each exam will be posted the week prior to the exam in Canvas.
 
-* **Summer Session I: Final exam on June 25**
-* **Summer Session II: Final exam on August 6**
+* **Summer Session I: Group final exam on June 23; Individual final exam on June 25**
+* **Summer Session II: Group final exam on August 4; Individual final exam on August 6**
 
 
 #### _Group portion_:
@@ -305,7 +305,7 @@ The final exam is cumulative, but will be more heavily weighted towards Unit 2 m
 * The group final exam is open book, open notes. 
 * You will be allowed a calculator on the group final exam. 
 * You **will** be required to use RStudio on the group final exam.
-* **If you miss more than 33% of class days in Unit 2 (midterm exam date until final exam date) without communicating with your section instructor and group-mates, you must complete the group exam individually.**
+* **If you miss more than 1 day of class in Unit 2 (midterm exam date until final exam date) without communicating with your section instructor and group-mates, you must complete the group final  individually.**
 
 
 
